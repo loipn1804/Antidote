@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sg.antidote">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="com.antidote.application.AntidoteApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_antidote_3"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.antidote.activities.FlashActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.antidote.activities.LoginActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"></activity>
+        <activity
+            android:name="com.antidote.activities.SignupActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.HomeActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.ShopActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.DetailActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"></activity>
+        <activity
+            android:name="com.antidote.activities.ProfileActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.ShippingAddressActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.TimerActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.TimerTempActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.ShoppingCartActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.DeliveryTimeActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.OrderSummaryActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.PaymentActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.SettingActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.CategoryActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.OrderHistoryActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.AboutActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.SearchActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.ContactActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.antidote.activities.FaqActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name="com.antidote.activities.FaqNewActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name="com.antidote.activities.FaqCommentActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.antidote.activities.BlogActivity"
+            android:excludeFromRecents="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <service
+            android:name="com.antidote.service.AntidoteService"
+            android:excludeFromRecents="false">
+
+        </service>
+        <service
+            android:name="com.antidote.service.AntidoteServiceParal"
+            android:excludeFromRecents="false">
+
+        </service>
+        <service
+            android:name="com.antidote.service.AntidoteTimerService"
+            android:excludeFromRecents="false"
+            android:process=":remote"
+            android:stopWithTask="false">
+
+        </service>
+
+        <receiver
+            android:name="com.antidote.service.TimerReceiver"
+            android:excludeFromRecents="false">
+
+        </receiver>
+
+        <receiver
+            android:name="com.antidote.service.BootCompleteReceiver"
+            android:excludeFromRecents="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:excludeFromRecents="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:excludeFromRecents="false"
+            android:exported="false" />
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentActivity"
+            android:excludeFromRecents="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.LoginActivity"
+            android:excludeFromRecents="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"
+            android:excludeFromRecents="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"
+            android:excludeFromRecents="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity"
+            android:excludeFromRecents="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity"
+            android:excludeFromRecents="false" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity"
+            android:excludeFromRecents="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity"
+            android:excludeFromRecents="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity"
+            android:excludeFromRecents="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.card.payment.DataEntryActivity"
+            android:excludeFromRecents="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="btn_white_gray">#b0b0b0</color>
+    <color name="black">#000000</color>
+    <color name="black_33">#333333</color>
+    <color name="black_tranparent">#80000000</color>
+    <color name="tranparent">#00000000</color>
+    <color name="hint_white">#b0b0b0</color>
+    <color name="light_blue_btn">#bf398eaf</color>
+    <color name="dark_blue_btn">#bf007fb0</color>
+    <color name="txt_login">#adcbd9</color>
+    <color name="bg_lnl_home">#191d20</color>
+    <color name="blue_circle">#46a8d9</color>
+    <color name="blue_home">#46a8d9</color>
+    <color name="blue_pressed">#63c8fa</color>
+    <color name="darkblue">#191d20</color>
+    <color name="darkblue_pressed">#3a4249</color>
+    <color name="divider_lv_home">#ebebeb</color>
+    <color name="bg_shop_expan">#ebebeb</color>
+    <color name="bg_row_faq">#ebebeb</color>
+    <color name="txt_price_row_shop">#909090</color>
+    <color name="bg_imv_detail">#fafafa</color>
+    <color name="gray_btn">#ebebeb</color>
+    <color name="gray_btn_presses">#c0c0c0</color>
+    <color name="bg_cmt_gray">#f5f5f5</color>
+    <color name="hint_profile">#cccccc</color>
+    <color name="bg_fa">#fafafa</color>
+    <color name="txt_profile">#909090</color>
+    <color name="red">#ff0000</color>
+    <color name="gray_trans">#80cccccc</color>
+
+</resources>

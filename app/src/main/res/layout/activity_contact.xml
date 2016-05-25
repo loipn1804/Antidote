@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rltLeft"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_white"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imvMenuLeft"
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imvMenuLeft"
+                android:text="Back"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Contact"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <WebView
+                android:id="@+id/wvContact"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4">
+
+            </WebView>
+
+            <LinearLayout
+                android:id="@+id/lnlAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Find us at"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/txt_profile"
+                    android:textSize="@dimen/txt_15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="46, Siglap Drive"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/blue_home"
+                    android:textSize="@dimen/txt_18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Singapore 456171"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/blue_home"
+                    android:textSize="@dimen/txt_18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lnlPhone"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_phone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Call or Whatsapp us at"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/txt_profile"
+                        android:textSize="@dimen/txt_15sp" />
+
+                    <TextView
+                        android:id="@+id/txtPhone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+65 85716420"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/blue_home"
+                        android:textSize="@dimen/txt_18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnlEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_email_black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Write to us at"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/txt_profile"
+                        android:textSize="@dimen/txt_15sp" />
+
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="hello@antidote.sg"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/blue_home"
+                        android:textSize="@dimen/txt_18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lnlFb"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_fb_black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="antidotelife"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/blue_home"
+                        android:textSize="@dimen/txt_18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnlInstagram"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_instagram" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="antidote_sg"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/blue_home"
+                        android:textSize="@dimen/txt_18sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/line_shadow"></LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

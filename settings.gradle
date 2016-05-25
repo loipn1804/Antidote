@@ -1,0 +1,1 @@
+include ':app', ':viewpagerindicatorlib', ':pullToRefreshNew', ':ParallaxScrollLibs', ':wheel', ':MyDaoGenerator', ':facebook_3.22', ':crop', ':lib'

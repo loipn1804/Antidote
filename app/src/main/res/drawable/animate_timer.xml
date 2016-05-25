@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/ic_r_40"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_r_30"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_r_20"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_r_10"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_0"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_l_10"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_l_20"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_l_30"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_l_40"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_l_30"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_l_20"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_l_10"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_0"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_r_10"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_r_20"
+        android:duration="20" />
+    <item
+        android:drawable="@drawable/ic_r_30"
+        android:duration="20" />
+
+</animation-list>

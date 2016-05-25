@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rltLeft"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_white">
+
+            <ImageView
+                android:id="@+id/imvMenuLeft"
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_actionbar_menu" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltCart"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_white">
+
+            <ImageView
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_actionbar_cart" />
+
+            <TextView
+                android:id="@+id/txtNumCart"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_num_cart"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltSearch"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/rltCart"
+            android:background="@drawable/btn_white">
+
+            <ImageView
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_actionbar_search" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="8dp"
+            android:src="@drawable/logo_antidote" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lvHomeMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:scrollbars="none">
+
+            </ListView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/line_shadow"></LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

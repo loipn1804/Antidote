@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rltPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            style="@style/StyledIndicators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/lnl_home_height"
+        android:background="@color/bg_lnl_home"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lnlTimer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:src="@drawable/ic_alarm" />
+
+            <TextView
+                android:id="@+id/txtActionBanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JUICE CLEANSE TIMER"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_15sp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlShop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:src="@drawable/ic_shop" />
+
+            <TextView
+                android:id="@+id/txtActionShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SHOP"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_15sp"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

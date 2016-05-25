@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lnlRoot"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:layout_marginRight="60dp"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lnlProfile"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#f0f0f0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imvAvatar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DUC TRAN"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/txt_18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_edit_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit profile"
+                            android:singleLine="true"
+                            android:textColor="@color/blue_home"
+                            android:textSize="@dimen/txt_15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlMenuProfile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_menu_size"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_menu_size"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_menu_imv_size"
+                        android:layout_height="@dimen/home_menu_imv_size"
+                        android:src="@drawable/ic_menu_profile" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROFILE"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlMenuHome"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_menu_size"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_menu_size"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_menu_imv_size"
+                        android:layout_height="@dimen/home_menu_imv_size"
+                        android:src="@drawable/logo_antidote" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOME"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlMenuShop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_menu_size"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_menu_size"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_menu_imv_size"
+                        android:layout_height="@dimen/home_menu_imv_size"
+                        android:src="@drawable/ic_menu_shop" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHOP"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlMenuBlog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_menu_size"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_menu_size"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_menu_imv_size"
+                        android:layout_height="@dimen/home_menu_imv_size"
+                        android:src="@drawable/ic_blog" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BLOG"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlMenuDiscussion"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_menu_size"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_menu_size"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_menu_imv_size"
+                        android:layout_height="@dimen/home_menu_imv_size"
+                        android:src="@drawable/ic_discussion" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DISCUSSION"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlMenuAbout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_menu_size"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_menu_size"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_menu_imv_size"
+                        android:layout_height="@dimen/home_menu_imv_size"
+                        android:src="@drawable/ic_menu_abount" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABOUT"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlMenuContact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_menu_size"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_menu_size"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_menu_imv_size"
+                        android:layout_height="@dimen/home_menu_imv_size"
+                        android:src="@drawable/ic_menu_contact" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONTACT "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlMenuSetting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_menu_size"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_menu_size"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_menu_imv_size"
+                        android:layout_height="@dimen/home_menu_imv_size"
+                        android:src="@drawable/ic_menu_setting" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SETTING"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlMenuFaq"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_menu_size"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_menu_size"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_menu_imv_size"
+                        android:layout_height="@dimen/home_menu_imv_size"
+                        android:src="@drawable/ic_faq" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FAQ "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_22sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlMenuLogout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_menu_size"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/home_menu_size"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/home_menu_imv_size"
+                        android:layout_height="@dimen/home_menu_imv_size"
+                        android:src="@drawable/ic_logout" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOG OUT "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_22sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
